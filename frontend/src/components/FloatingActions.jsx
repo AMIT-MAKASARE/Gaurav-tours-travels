@@ -9,7 +9,7 @@ const FloatingActions = () => {
       <motion.a
         whileHover={{ scale: 1.12 }}
         whileTap={{ scale: 0.92 }}
-        href="https://wa.me/917038508035"
+        href="https://wa.me/919890204683"
         target="_blank"
         aria-label="Chat on WhatsApp"
         className="bg-green-500 text-white p-4 rounded-full shadow-lg flex items-center justify-center"
@@ -21,7 +21,7 @@ const FloatingActions = () => {
       <motion.a
         whileHover={{ scale: 1.12 }}
         whileTap={{ scale: 0.92 }}
-        href="tel:7038508035"
+        href="tel:9890204683"
         aria-label="Call us"
         className="bg-blue-600 text-white p-4 rounded-full shadow-lg flex items-center justify-center"
       >

@@ -6,6 +6,7 @@ import BookingForm from "../components/BookingForm";
 import FloatingActions from "../components/FloatingActions";
 import PlacesWeCover from "../components/PlacesWeCover";
 import WhyChooseUs from  "../components/why-choose-us"
+
 import { motion } from "framer-motion";
 
 <motion.h2
@@ -70,6 +71,7 @@ const Home = () => {
       <BookingForm />
       <Footer />
       <FloatingActions />
+      
     </>
   );
 };

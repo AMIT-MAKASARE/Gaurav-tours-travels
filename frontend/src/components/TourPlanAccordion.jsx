@@ -56,7 +56,7 @@ Time: ${plan.time}
 Please contact me.
     `;
     window.open(
-      `https://wa.me/917038508035?text=${encodeURIComponent(msg)}`,
+      `https://wa.me/919890204683?text=${encodeURIComponent(msg)}`,
       "_blank"
     );
   };

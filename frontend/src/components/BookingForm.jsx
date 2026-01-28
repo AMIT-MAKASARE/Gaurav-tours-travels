@@ -36,16 +36,42 @@ const BookingForm=()=> {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, margin: "-100px" })
 
-  const handleSubmit = async (e) => {
-    e.preventDefault()
-    setFormState("loading")
+const handleSubmit = async (e) => {
 
-    await new Promise((resolve) => setTimeout(resolve, 2000))
-    setFormState("success")
+  e.preventDefault()
+  setFormState("loading")
 
-    // Reset after showing success
-    setTimeout(() => setFormState("idle"), 3000)
+  const form = e.currentTarget
+  const formData = new FormData(form)
+
+  formData.append("access_key", "d45cb0e1-f4fd-449e-b26c-4860563be142")
+  formData.append("subject", "New Trip Booking Enquiry")
+  formData.append("from_name", "Gaurav Tours & Travels")
+
+  try {
+    const res = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData,
+    })
+
+    const data = await res.json()
+
+    if (data.success) {
+      setFormState("success")
+      form.reset()
+    } else {
+      console.error(data)
+      setFormState("idle")
+      alert("Something went wrong. Please try again.")
+    }
+  } catch (error) {
+    console.error(error)
+    setFormState("idle")
+    alert("Network error. Please try again.")
   }
+
+  setTimeout(() => setFormState("idle"), 4000)
+}
 
   return (
     <section id="contact" className="py-20 md:py-28 bg-muted/50" ref={ref}>
@@ -150,6 +176,7 @@ src="https://www.google.com/maps?q=Zostel%20Kranti%20Chowk%20Aurangabad&output=e
                     </Label>
                     <Input
                       id="name"
+                      name="name"
                       placeholder="John Doe"
                       required
                       className="rounded-xl bg-background border-border focus:ring-2 focus:ring-primary transition-all"
@@ -161,6 +188,7 @@ src="https://www.google.com/maps?q=Zostel%20Kranti%20Chowk%20Aurangabad&output=e
                     </Label>
                     <Input
                       id="phone"
+                       name="phone"
                       type="tel"
                       placeholder="+91 98765 43210"
                       required
@@ -175,6 +203,7 @@ src="https://www.google.com/maps?q=Zostel%20Kranti%20Chowk%20Aurangabad&output=e
                   </Label>
                   <Input
                     id="email"
+                    name="email"
                     type="email"
                     placeholder="john@example.com"
                     required
@@ -189,6 +218,7 @@ src="https://www.google.com/maps?q=Zostel%20Kranti%20Chowk%20Aurangabad&output=e
                     </Label>
                     <select
                       id="destination"
+                      name="destination"
                       required
                       className="w-full h-10 rounded-xl bg-background border border-border px-3 text-foreground focus:ring-2 focus:ring-primary transition-all"
                     >
@@ -208,6 +238,7 @@ src="https://www.google.com/maps?q=Zostel%20Kranti%20Chowk%20Aurangabad&output=e
                     </Label>
                     <Input
                       id="travelers"
+                      name="travelers"
                       type="number"
                       min="1"
                       placeholder="2"
@@ -223,6 +254,7 @@ src="https://www.google.com/maps?q=Zostel%20Kranti%20Chowk%20Aurangabad&output=e
                   </Label>
                   <Input
                     id="date"
+                    name="travel_date"
                     type="date"
                     required
                     className="rounded-xl bg-background border-border focus:ring-2 focus:ring-primary transition-all"
@@ -235,6 +267,7 @@ src="https://www.google.com/maps?q=Zostel%20Kranti%20Chowk%20Aurangabad&output=e
                   </Label>
                   <textarea
                     id="message"
+                    name="message"
                     rows={4}
                     placeholder="Tell us about your travel preferences, special requirements, etc."
                     className="w-full rounded-xl bg-background border border-border px-4 py-3 text-foreground focus:ring-2 focus:ring-primary transition-all resize-none"

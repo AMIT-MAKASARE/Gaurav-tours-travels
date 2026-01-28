@@ -66,7 +66,7 @@ const VehicleCard = ({ title, capacity, description, price, index }) => {
 
         <motion.a
           whileTap={{ scale: 0.95 }}
-          href="tel:7038508035"
+          href="tel:9890204683"
           className="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-700"
         >
           Call

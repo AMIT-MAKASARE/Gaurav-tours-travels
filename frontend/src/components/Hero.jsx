@@ -10,7 +10,7 @@ import { Button } from "@/components/ui/button"
 
 const Hero = () => {
   const handleBookRide = () => {
-    window.location.href = "tel:7038508035"
+    window.location.href = "tel:9890204683"
   }
 
   return (

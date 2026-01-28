@@ -3,7 +3,7 @@
 //   price,
 //   pickup = "",
 // }) => {
-//   const phoneNumber = "917038508035"; // your WhatsApp number
+//   const phoneNumber = "919890204683"; // your WhatsApp number
 
 //   const message = `
 // Hello Gaurav Tours & Travels 👋
@@ -33,7 +33,7 @@ export const sendWhatsAppMessage = ({
   time,
   locations,
 }) => {
-  const phoneNumber = "917038508035"; // WhatsApp number
+  const phoneNumber = "919890204683"; // WhatsApp number
 
   const message = `
 *Day Tour Booking Request* 🚗
