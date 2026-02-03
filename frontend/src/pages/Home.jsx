@@ -6,6 +6,7 @@ import BookingForm from "../components/BookingForm";
 import FloatingActions from "../components/FloatingActions";
 import PlacesWeCover from "../components/PlacesWeCover";
 import WhyChooseUs from  "../components/why-choose-us"
+import HappyClients from "../components/HappyClients"
 
 import { motion } from "framer-motion";
 
@@ -26,7 +27,7 @@ const Home = () => {
       <Navbar />
       <Hero />
       <PlacesWeCover />
-
+     
       {/* Vehicles Section */}
       <section className="py-16 bg-gray-100">
         <div className="max-w-7xl text-center mx-auto px-4">
@@ -39,14 +40,16 @@ const Home = () => {
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-
+         
             <VehicleCard
-              icon="mdi:rickshaw"
-              title="Auto Rickshaw"
-              capacity="3 Passengers"
-              description="Affordable and quick city rides with full driver support."
+              icon="mdi:bus"
+              title="Urbania"
+              capacity="16 Passengers"
+              description="A modern, premium, and stylish choice often used for corporate and high-end tourist travel."
               price={15}
             />
+
+            
 
             <VehicleCard
               icon="mdi:car"
@@ -63,10 +66,19 @@ const Home = () => {
               description="Perfect for family and long-distance journeys."
               price={28}
             />
+         <VehicleCard
+              icon="mdi:rickshaw"
+              title="Auto Rickshaw"
+              capacity="3 Passengers"
+              description="Affordable and quick city rides with full driver support."
+              price={15}
+            />
+            
 
           </div>
         </div>
       </section>
+       <HappyClients/>
        <WhyChooseUs/>
       <BookingForm />
       <Footer />

@@ -11,6 +11,7 @@ const navLinks = [
   { name: "Vehicales", href: "#Vehicales" },
   { name: "Why Us", href: "#whyUs" },
   { name: "Contact", href: "#contact" },
+  { name: "Happy Client", href: "#happyClient" },
 ]
 
 const Navbar = () => {
@@ -40,23 +41,28 @@ const Navbar = () => {
 
           {/* Logo */}
           <motion.a href="#home" className="flex items-center gap-2" whileHover={{ scale: 1.02 }}>
-            <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center">
-              <MapPin className="w-5 h-5 text-primary-foreground" />
-            </div>
+            <div className="w-10 h-10 rounded-full  flex items-center justify-center overflow-hidden">
+            <img
+              src="public\logo.jpeg"
+              alt="Location"
+              className="w-10 h-10 object-contain border-rounded"
+            />
+          </div>
+
             <div>
               <h1
                 className={`text-lg font-bold leading-tight ${
                   isScrolled ? "text-foreground" : "text-white"
                 }`}
               >
-                Gaurav Tours
+                GAURAV TOURS
               </h1>
               <p
                 className={`text-xs ${
                   isScrolled ? "text-muted-foreground" : "text-white/80"
                 }`}
               >
-                & Travels
+                & TRAVELS
               </p>
             </div>
           </motion.a>

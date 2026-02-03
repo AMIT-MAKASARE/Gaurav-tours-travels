@@ -1,29 +1,3 @@
-// export const sendWhatsAppMessage = ({
-//   vehicle,
-//   price,
-//   pickup = "",
-// }) => {
-//   const phoneNumber = "919890204683"; // your WhatsApp number
-
-//   const message = `
-// Hello Gaurav Tours & Travels 👋
-
-// I want to book a ride 🚖
-
-// Vehicle: ${vehicle}
-// Price: ₹${price} per km
-// Pickup & Destination: ${pickup}
-
-// Please contact me.
-//   `;
-
-//   const encodedMessage = encodeURIComponent(message.trim());
-
-//   window.open(
-//     `https://wa.me/${phoneNumber}?text=${encodedMessage}`,
-//     "_blank"
-//   );
-// };
 
 export const sendWhatsAppMessage = ({
   packageTitle,

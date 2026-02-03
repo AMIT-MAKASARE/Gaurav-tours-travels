@@ -1,16 +1,20 @@
+
+
 "use client"
 
 import { motion } from "framer-motion"
 import { sendWhatsAppMessage } from "../utils/whatsapp"
 
-const vehicleImages = {
+const vehiclepublic = {
+  
   "Auto Rickshaw": "/auto.webp",
   "Small Car": "/car.jpg",
   "Big Car / SUV": "/suv.avif",
+  "Urbania": "/bus.jpg",
 }
 
 const VehicleCard = ({ title, capacity, description, price, index }) => {
-  const vehicleImage = vehicleImages[title] || "/auto-rickshaw.jpg"
+  const vehicleImage = vehiclepublic[title] || "/auto.webp"
 
   return (
     <motion.div
@@ -28,7 +32,7 @@ const VehicleCard = ({ title, capacity, description, price, index }) => {
         className="w-full h-48 mx-auto mb-4 rounded-2xl bg-blue-100 flex items-center justify-center group-hover:bg-blue-600 transition-colors overflow-hidden"
       >
         <img
-          src={vehicleImage || "/placeholder.svg"}
+          src={vehicleImage}
           alt={title}
           className="w-full h-full object-cover"
         />
@@ -48,11 +52,6 @@ const VehicleCard = ({ title, capacity, description, price, index }) => {
       <p className="mt-3 text-sm text-gray-600">
         {description}
       </p>
-
-      {/* Price */}
-      {/* <p className="mt-4 text-lg font-bold text-blue-600">
-        ₹{price} <span className="text-sm font-medium text-gray-500">/ km</span>
-      </p> */}
 
       {/* Actions */}
       <div className="mt-6 flex gap-3 justify-center">
@@ -77,3 +76,4 @@ const VehicleCard = ({ title, capacity, description, price, index }) => {
 }
 
 export default VehicleCard
+
