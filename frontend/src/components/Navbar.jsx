@@ -43,7 +43,7 @@ const Navbar = () => {
           <motion.a href="#home" className="flex items-center gap-2" whileHover={{ scale: 1.02 }}>
             <div className="w-10 h-10 rounded-full  flex items-center justify-center overflow-hidden">
             <img
-              src="public\logo.jpeg"
+              src="/logo.jpeg"
               alt="Location"
               className="w-10 h-10 object-contain border-rounded"
             />
