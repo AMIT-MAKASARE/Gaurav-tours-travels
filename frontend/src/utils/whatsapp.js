@@ -30,3 +30,23 @@ Please confirm this booking!
     "_blank"
   );
 };
+
+export const sendWhatsAppMessageV = ({ vehicle, price }) => {
+  const phoneNumber = "919890204683"
+
+  const message = `
+Hello 👋 Gaurav Tours & Travels
+
+I want this tour.
+
+🚗 Vehicle Selected: ${vehicle}
+💰 Price: ${price}
+
+Please contact me.
+  `
+
+  window.open(
+    `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`,
+    "_blank"
+  )
+}
