@@ -105,11 +105,17 @@ const HappyClients = () => {
           {/* CTA */}
           <div className="mt-12 sm:mt-16 text-center">
             <button
-              onClick={() => console.log("Booking inquiry clicked")}
-              className="px-6 py-2 sm:px-8 sm:py-3 bg-primary text-white font-semibold rounded-lg hover:bg-primary/90 transition-colors duration-200"
+                   onClick={() => {
+                    const element = document.getElementById("contact");
+                    if (element) {
+                      element.scrollIntoView({ behavior: "smooth" });
+                    }
+                  }}  className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-full px-6 py-3 shadow-lg hover:shadow-xl transition-all hover:scale-105"
+
             >
               Book Your Tour
             </button>
+            
           </div>
 
         </div>

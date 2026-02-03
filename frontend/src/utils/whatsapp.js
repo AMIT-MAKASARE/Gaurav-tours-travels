@@ -13,7 +13,6 @@ export const sendWhatsAppMessage = ({
 *Day Tour Booking Request* 🚗
 
 *Package:* ${packageTitle}
-*Price:* ₹${packagePrice} per person
 *Vehicle:* ${vehicle}
 *Time:* ${time}
 *Location:* ${locations}
@@ -31,6 +30,10 @@ Please confirm this booking!
   );
 };
 
+
+
+
+
 export const sendWhatsAppMessageV = ({ vehicle, price }) => {
   const phoneNumber = "919890204683"
 
@@ -40,7 +43,7 @@ Hello 👋 Gaurav Tours & Travels
 I want this tour.
 
 🚗 Vehicle Selected: ${vehicle}
-💰 Price: ${price}
+💰 price: ${price}
 
 Please contact me.
   `
