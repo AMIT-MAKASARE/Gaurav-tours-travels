@@ -17,6 +17,7 @@ const VehicleCard = ({ title, capacity, description, price, index }) => {
 
   return (
     <motion.div
+      id="Vehicales"
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, delay: index * 0.1 }}

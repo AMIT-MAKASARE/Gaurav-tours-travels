@@ -49,7 +49,7 @@ const Hero = () => {
               transition={{ duration: 0.6, delay: 0.1 }}
               className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-card leading-tight mb-6"
             >
-              <span className="block">Explore Cha.Sambhajinagar with</span>
+              <span className="block">Explore Cha.Sambhajinagar (A.bad) with</span>
               <span className="text-secondary">Comfort & Trust</span>
             </motion.h1>
 
@@ -139,10 +139,10 @@ const Hero = () => {
               <h3 className="text-lg font-bold text-card mb-2">Ajanta</h3>
               <p className="text-card/70 text-sm mb-4">Step into history at the Ajanta Caves, where timeless art and ancient stories come alive..</p>
               <div className="flex items-center justify-between">
-                <div>
+                {/* <div>
                   <span className="text-2xl font-bold text-secondary">₹ 799</span>
                   <span className="text-card/60 text-sm ml-1">/person</span>
-                </div>
+                </div> */}
                <Button
                   onClick={() => {
                     const element = document.getElementById("contact");

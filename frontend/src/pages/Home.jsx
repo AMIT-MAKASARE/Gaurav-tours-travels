@@ -40,7 +40,30 @@ const Home = () => {
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-         
+         <VehicleCard
+              icon="mdi:car-suv"
+              title="Big Car / SUV"
+              capacity="6-7 Passengers"
+              description="Perfect for family and long-distance journeys."
+              price={28}
+            />
+
+                <VehicleCard
+              icon="mdi:car"
+              title="Small Car"
+              capacity="4 Passengers"
+              description="Comfortable for city travel and outstation trips."
+              price={22}
+            />
+           <VehicleCard
+              icon="mdi:rickshaw"
+              title="Auto Rickshaw"
+              capacity="3 Passengers"
+              description="Affordable and quick city rides with full driver support."
+              price={15}
+            />
+            
+
             <VehicleCard
               icon="mdi:bus"
               title="Urbania"
@@ -51,29 +74,10 @@ const Home = () => {
 
             
 
-            <VehicleCard
-              icon="mdi:car"
-              title="Small Car"
-              capacity="4 Passengers"
-              description="Comfortable for city travel and outstation trips."
-              price={22}
-            />
+        
 
-            <VehicleCard
-              icon="mdi:car-suv"
-              title="Big Car / SUV"
-              capacity="6-7 Passengers"
-              description="Perfect for family and long-distance journeys."
-              price={28}
-            />
-         <VehicleCard
-              icon="mdi:rickshaw"
-              title="Auto Rickshaw"
-              capacity="3 Passengers"
-              description="Affordable and quick city rides with full driver support."
-              price={15}
-            />
             
+         
 
           </div>
         </div>

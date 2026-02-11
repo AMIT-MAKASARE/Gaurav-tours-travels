@@ -327,14 +327,15 @@ import { MapPin, Clock, Star, ArrowRight, Heart, ChevronDown } from "lucide-reac
 import { Button } from "@/components/ui/button"
 import { sendWhatsAppMessage } from "@/utils/whatsapp"
 
-const VEHICLES = ["Urbaniya", "Small Car", "Big Car / SUV", "Auto Rickshaw"]
+const VEHICLES = ["Big Car / SUV", "Small Car",  "Auto Rickshaw","Urbaniya"]
 
 // Vehicle prices
 const vehiclePrices = {
-  "Urbaniya": { "per km": 25 },
   "Small Car": { "Ellora": 2100, "Ajanta": 2000, "Aurangabad": 2500, "Lonar": 3000 },
   "Big Car / SUV": { "Ellora": 3100, "Ajanta": 3000, "Aurangabad": 3500, "Lonar": 4000 },
   "Auto Rickshaw": { "Ellora": 1100, "Ajanta": 1000, "Aurangabad": 1500, "Lonar": 1000 },
+    "Urbaniya": { "per km": 25 },
+
 }
 
 const packages = [
@@ -567,7 +568,7 @@ const PlacesWeCover = () => {
             Our Packages
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
-            4-Day Aurangabad <span className="text-primary">Tour</span>
+            4-Day Cha.Sambhajinagar (A.bad) <span className="text-primary">Tour</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
             Explore the magnificent heritage sites of Aurangabad across 4 unforgettable days
