@@ -9,6 +9,8 @@ import WhyChooseUs from  "../components/why-choose-us"
 import HappyClients from "../components/HappyClients"
 
 import { motion } from "framer-motion";
+import ReviewSection from "../components/Review";
+
 
 <motion.h2
   initial={{ opacity: 0, y: 30 }}
@@ -45,7 +47,7 @@ const Home = () => {
               title="Big Car / SUV"
               capacity="6-7 Passengers"
               description="Perfect for family and long-distance journeys."
-              price={28}
+              // price={28}
             />
 
                 <VehicleCard
@@ -53,14 +55,14 @@ const Home = () => {
               title="Small Car"
               capacity="4 Passengers"
               description="Comfortable for city travel and outstation trips."
-              price={22}
+              // price={22}
             />
            <VehicleCard
               icon="mdi:rickshaw"
               title="Auto Rickshaw"
               capacity="3 Passengers"
               description="Affordable and quick city rides with full driver support."
-              price={15}
+              // price={15}
             />
             
 
@@ -69,7 +71,7 @@ const Home = () => {
               title="Urbania"
               capacity="16 Passengers"
               description="A modern, premium, and stylish choice often used for corporate and high-end tourist travel."
-              price={15}
+              // price={15}
             />
 
             
@@ -85,6 +87,7 @@ const Home = () => {
        <HappyClients/>
        <WhyChooseUs/>
       <BookingForm />
+      <ReviewSection />
       <Footer />
       <FloatingActions />
       
