@@ -327,14 +327,14 @@ import { MapPin, Clock, Star, ArrowRight, Heart, ChevronDown } from "lucide-reac
 import { Button } from "@/components/ui/button"
 import { sendWhatsAppMessage } from "@/utils/whatsapp"
 
-const VEHICLES = ["Big Car / SUV", "Small Car",  "Auto Rickshaw","Urbaniya"]
+const VEHICLES = ["Big Car / SUV", "Small Car",  "Auto Rickshaw","Tempo Traveller"]
 
 // Vehicle prices
 const vehiclePrices = {
-  "Small Car": { "Ellora": 2100, "Ajanta": 2000, "Aurangabad": 2500, "Lonar": 3000 },
-  "Big Car / SUV": { "Ellora": 3100, "Ajanta": 3000, "Aurangabad": 3500, "Lonar": 4000 },
-  "Auto Rickshaw": { "Ellora": 1100, "Ajanta": 1000, "Aurangabad": 1500, "Lonar": 1000 },
-    "Urbaniya": { "per km": 25 },
+  "Small Car": { "Ellora": 2100, "Ajanta": 5400, "Aurangabad": 2000, "Lonar": 6600 },
+  "Big Car / SUV": { "Ellora": 3500, "Ajanta": 3300, "Aurangabad": 3000, "Lonar": 4800 },
+  "Auto Rickshaw": { "Ellora": 1300,  "Aurangabad": 1100,  },
+    "Tempo Traveller": { "per km": "pakage" },
 
 }
 
