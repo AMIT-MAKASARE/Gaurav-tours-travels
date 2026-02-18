@@ -11,7 +11,7 @@ const contactInfo = [
   {
     icon: MapPin,
     title: "Our Office",
-    details: [" Zostel Near Kranti Chowk", "Cha. Sambhajinagar(Aurangabad) - 430110, India"],
+    details: ["Kranti Chowk Aadalat Road, Near Zostel", "Cha. Sambhajinagar(Aurangabad) - 430110, India"],
   },
   {
     icon: Phone,
