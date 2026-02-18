@@ -223,12 +223,10 @@ src="https://www.google.com/maps?q=Zostel%20Kranti%20Chowk%20Aurangabad&output=e
                       className="w-full h-10 rounded-xl bg-background border border-border px-3 text-foreground focus:ring-2 focus:ring-primary transition-all"
                     >
                       <option value="">Select destination</option>
-                      <option value="golden-triangle">Golden Triangle</option>
-                      <option value="kerala">Kerala Backwaters</option>
-                      <option value="rajasthan">Rajasthan Heritage</option>
-                      <option value="goa">Goa Beach</option>
-                      <option value="himalayan">Himalayan Adventure</option>
-                      <option value="varanasi">Varanasi Spiritual</option>
+                      <option value="Ajanta">Ajanta</option>
+                      <option value="Ellora">Ellora</option>
+                      <option value="Aurangabad City Tour">Aurangabad City Tour</option>
+                      <option value="Lonnar">Lonnar</option>
                       <option value="custom">Custom Tour</option>
                     </select>
                   </div>
