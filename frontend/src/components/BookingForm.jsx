@@ -177,7 +177,7 @@ src="https://www.google.com/maps?q=Zostel%20Kranti%20Chowk%20Aurangabad&output=e
                     <Input
                       id="name"
                       name="name"
-                      placeholder="John Doe"
+                      // placeholder="John Doe"
                       required
                       className="rounded-xl bg-background border-border focus:ring-2 focus:ring-primary transition-all"
                     />
@@ -190,7 +190,7 @@ src="https://www.google.com/maps?q=Zostel%20Kranti%20Chowk%20Aurangabad&output=e
                       id="phone"
                        name="phone"
                       type="tel"
-                      placeholder="+91 98765 43210"
+                      // placeholder="+91 98765 43210"
                       required
                       className="rounded-xl bg-background border-border focus:ring-2 focus:ring-primary transition-all"
                     />
@@ -205,7 +205,7 @@ src="https://www.google.com/maps?q=Zostel%20Kranti%20Chowk%20Aurangabad&output=e
                     id="email"
                     name="email"
                     type="email"
-                    placeholder="john@example.com"
+                    // placeholder="john@example.com"
                     required
                     className="rounded-xl bg-background border-border focus:ring-2 focus:ring-primary transition-all"
                   />
