@@ -331,8 +331,8 @@ const VEHICLES = ["Big Car / SUV", "Small Car",  "Auto Rickshaw","Tempo Travelle
 
 // Vehicle prices
 const vehiclePrices = {
-  "Small Car": { "Ellora": 2100, "Ajanta": 5400, "Aurangabad": 2000, "Lonar": 6600 },
-  "Big Car / SUV": { "Ellora": 3500, "Ajanta": 3300, "Aurangabad": 3000, "Lonar": 4800 },
+  "Small Car": { "Ellora": 2100, "Ajanta": 3300, "Aurangabad": 2000, "Lonar":  4800},
+  "Big Car / SUV": { "Ellora": 3500, "Ajanta": 5400, "Aurangabad": 3000, "Lonar":  6600 },
   "Auto Rickshaw": { "Ellora": 1300,  "Aurangabad": 1100,  },
     "Tempo Traveller": { "per km": "pakage" },
 
